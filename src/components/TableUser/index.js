@@ -2,10 +2,13 @@ import { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSort} from '@fortawesome/free-solid-svg-icons'
+import { Button } from 'react-bootstrap';
+
 
 function TableUser(props){
     const {users} = props
     const [dataConvert, setDataConvert] = useState([])
+    const [theme, setTheme] = useState('light')
 
     useEffect(() => {
         setDataConvert([...users])  
@@ -21,9 +24,13 @@ function TableUser(props){
         setDataConvert([...result])
     }
 
+    const hanleChangeMode = (mode) => {
+        setTheme(mode)
+    }
+
     return(
         <div>
-            <Table striped bordered hover variant="light">
+            <Table striped bordered hover variant={theme}>
                 <thead>
                     <tr>
                     <th>Fullname<FontAwesomeIcon style={{float: 'right'}} icon={faSort} onClick={() => handleSortByFirstname()} /></th>
@@ -41,6 +48,10 @@ function TableUser(props){
                     ))}
                 </tbody>
             </Table>
+            <div style={{textAlign: 'center'}}>
+                <Button variant="light" onClick={() => hanleChangeMode('light')}>Light</Button>
+                <Button variant="dark" onClick={() => hanleChangeMode('dark')}>Dark</Button>
+            </div>
         </div>
     )
 }

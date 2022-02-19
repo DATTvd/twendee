@@ -1,7 +1,6 @@
 import { Button, Pagination } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const totalPage = [1,2,3,4,5,6,7,8,9,10]
 
 function MyPagination(props){
@@ -18,9 +17,10 @@ function MyPagination(props){
         onPageChange(item)
     }
 
+
     return(
-        <div style={{display: 'flex', justifyContent: 'center'}}>
-            <Pagination>
+        <div style={{marginTop: '20px'}}>
+            <Pagination style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20'}}>
                 <Button disabled = {infos.page === 1} variant="primary" onClick={() => handlePrev(infos.page)}>Prev</Button>
                     {totalPage.map((item,index) => (
                         <Pagination.Item active={infos.page === item} key={index} onClick={() => handleChangePage(item)}>{item}</Pagination.Item>     
