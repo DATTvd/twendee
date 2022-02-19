@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/twendee/static/css/main.56e6221f.css",
+    "main.js": "/twendee/static/js/main.c5d3a5e2.js",
+    "static/js/787.58f1f886.chunk.js": "/twendee/static/js/787.58f1f886.chunk.js",
+    "index.html": "/twendee/index.html",
+    "main.56e6221f.css.map": "/twendee/static/css/main.56e6221f.css.map",
+    "main.c5d3a5e2.js.map": "/twendee/static/js/main.c5d3a5e2.js.map",
+    "787.58f1f886.chunk.js.map": "/twendee/static/js/787.58f1f886.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56e6221f.css",
+    "static/js/main.c5d3a5e2.js"
+  ]
+}
