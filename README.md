@@ -6,5 +6,5 @@ You’ll need to have Node 14.0.0 or later version on your local development mac
 - Run npm start
 - Then you can view twendee in the browser by local link
 
-#Link give a walk-through and explain your implementation in all the major files 
+#Link give a walk-through and explain my implementation in all the major files 
 https://www.loom.com/share/919d9e6013504e00b858833e7f160ba0
